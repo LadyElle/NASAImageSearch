@@ -1,19 +1,18 @@
-Read Me
+# Read Me
 
 Michelle Stafford
 
-Libraries
-	1.	I included the SwiftyJSON library to help with the unpacking of the JSON response. 
-	⁃	Without this library, the unfurling of the JSON response would have taken a lot of time and it would have involved a lot of code, a lot of which would be rather unreadable once it got to the point of getting data out of the JSON response
-	2.	How I architected this project:
-	⁃	Everything that happens on a different page, had all the code separated for readability. 
-	⁃	I chose a struct for the Space object, so that the object didn't need its own initializer, as only four values needed to be set
-	⁃	I separated the cell into its own file, so I could pass in the object and set the values for the cell, instead of having to call the cell, the cell's child, and set the child's value each time. This saves time and helps makes things easier to read
-	⁃	The details view page takes in a space object and displays more detailed version of the space object, once tapped on from a cell
-	⁃	The main controller handles all the search functions and the loading of the data into the table view. 
-	3.	Load up XCode and launch the project
-	⁃	hit the the start button
-	⁃	swipe down to show the search bar
-	⁃	Type in a keyword to begin searching (This has a long load time, hitting enter makes some of the earlier pictures display)
-	⁃	Scroll down to the bottom of the table once the all the images have loaded, to load in more images for the next page
-	⁃	Tap any of the images to view more about the picture
+1. I included the SwiftyJSON library to help with the unpacking of the JSON response. 
+⁃ Without this library, the unfurling of the JSON response would have taken a lot of time and it would have involved a lot of code, a lot of which would be rather unreadable once it got to the point of getting data out of the JSON response
+2.How I architected this project:
+⁃Everything that happens on a different page, had all the code separated for readability. 
+⁃I chose a struct for the Space object, so that the object didn't need its own initializer, as only four values needed to be set
+⁃I separated the cell into its own file, so I could pass in the object and set the values for the cell, instead of having to call the cell, the cell's child, and set the child's value each time. This saves time and helps makes things easier to read
+⁃The details view page takes in a space object and displays more detailed version of the space object, once tapped on from a cell
+⁃The main controller handles all the search functions and the loading of the data into the table view. 
+3.Load up XCode and launch the project
+⁃hit the the start button
+⁃swipe down to show the search bar
+⁃Type in a keyword to begin searching (This has a long load time, hitting enter makes some of the earlier pictures display)
+⁃Scroll down to the bottom of the table once the all the images have loaded, to load in more images for the next page
+⁃Tap any of the images to view more about the picture
