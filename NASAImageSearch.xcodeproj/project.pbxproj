@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E73F8DD255B2AF800BC16A7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EF6B135225167F300003BF9 /* Info.plist */; };
+		2E73F8E0255B2B3B00BC16A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73F8DF255B2B3B00BC16A7 /* SwiftyJSON.swift */; };
 		2E773BBB225731C100CFD5C3 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2E773BBA225731C100CFD5C3 /* ReadMe.rtf */; };
+		2E97E0442255970000A98043 /* SpaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E0432255970000A98043 /* SpaceDetailsViewController.swift */; };
+		2EE54287225462170092AE4F /* SpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE54286225462170092AE4F /* SpaceCell.swift */; };
+		2EF6B12A225167EE00003BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6B129225167EE00003BF9 /* AppDelegate.swift */; };
+		2EF6B12C225167EE00003BF9 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6B12B225167EE00003BF9 /* SpaceViewController.swift */; };
+		2EF6B12F225167EE00003BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF6B12D225167EE00003BF9 /* Main.storyboard */; };
+		2EF6B131225167F300003BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF6B130225167F300003BF9 /* Assets.xcassets */; };
+		2EF6B134225167F300003BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF6B132225167F300003BF9 /* LaunchScreen.storyboard */; };
+		2EF6B13C22518DF100003BF9 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6B13B22518DF100003BF9 /* Space.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E73F8DF255B2B3B00BC16A7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		2E773BBA225731C100CFD5C3 /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
-		2EF6B126225167EE00003BF9 /* MichelleStaffordCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichelleStaffordCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E97E0432255970000A98043 /* SpaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDetailsViewController.swift; sourceTree = "<group>"; };
+		2EE54286225462170092AE4F /* SpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCell.swift; sourceTree = "<group>"; };
+		2EF6B126225167EE00003BF9 /* NASAImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF6B129225167EE00003BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EF6B12B225167EE00003BF9 /* SpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewController.swift; sourceTree = "<group>"; };
+		2EF6B12E225167EE00003BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EF6B130225167F300003BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EF6B133225167F300003BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EF6B135225167F300003BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF6B13B22518DF100003BF9 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,10 +46,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E97E03C22558F5C00A98043 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2E73F8DF255B2B3B00BC16A7 /* SwiftyJSON.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		2EF6B11D225167EE00003BF9 = {
 			isa = PBXGroup;
 			children = (
 				2E773BBA225731C100CFD5C3 /* ReadMe.rtf */,
+				2EF6B128225167EE00003BF9 /* NASAImageSearch */,
 				2EF6B127225167EE00003BF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -37,17 +66,34 @@
 		2EF6B127225167EE00003BF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EF6B126225167EE00003BF9 /* MichelleStaffordCodingChallenge.app */,
+				2EF6B126225167EE00003BF9 /* NASAImageSearch.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2EF6B128225167EE00003BF9 /* NASAImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2E97E03C22558F5C00A98043 /* Packages */,
+				2EF6B129225167EE00003BF9 /* AppDelegate.swift */,
+				2EF6B12B225167EE00003BF9 /* SpaceViewController.swift */,
+				2EF6B13B22518DF100003BF9 /* Space.swift */,
+				2EE54286225462170092AE4F /* SpaceCell.swift */,
+				2E97E0432255970000A98043 /* SpaceDetailsViewController.swift */,
+				2EF6B12D225167EE00003BF9 /* Main.storyboard */,
+				2EF6B130225167F300003BF9 /* Assets.xcassets */,
+				2EF6B132225167F300003BF9 /* LaunchScreen.storyboard */,
+				2EF6B135225167F300003BF9 /* Info.plist */,
+			);
+			path = NASAImageSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2EF6B125225167EE00003BF9 /* MichelleStaffordCodingChallenge */ = {
+		2EF6B125225167EE00003BF9 /* NASAImageSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EF6B138225167F300003BF9 /* Build configuration list for PBXNativeTarget "MichelleStaffordCodingChallenge" */;
+			buildConfigurationList = 2EF6B138225167F300003BF9 /* Build configuration list for PBXNativeTarget "NASAImageSearch" */;
 			buildPhases = (
 				2EF6B122225167EE00003BF9 /* Sources */,
 				2EF6B123225167EE00003BF9 /* Frameworks */,
@@ -57,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = MichelleStaffordCodingChallenge;
+			name = NASAImageSearch;
 			productName = MichelleStaffordCodingChallenge;
-			productReference = 2EF6B126225167EE00003BF9 /* MichelleStaffordCodingChallenge.app */;
+			productReference = 2EF6B126225167EE00003BF9 /* NASAImageSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -90,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2EF6B125225167EE00003BF9 /* MichelleStaffordCodingChallenge */,
+				2EF6B125225167EE00003BF9 /* NASAImageSearch */,
 			);
 		};
 /* End PBXProject section */
@@ -100,7 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF6B134225167F300003BF9 /* LaunchScreen.storyboard in Resources */,
+				2EF6B131225167F300003BF9 /* Assets.xcassets in Resources */,
 				2E773BBB225731C100CFD5C3 /* ReadMe.rtf in Resources */,
+				2E73F8DD255B2AF800BC16A7 /* Info.plist in Resources */,
+				2EF6B12F225167EE00003BF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,10 +161,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE54287225462170092AE4F /* SpaceCell.swift in Sources */,
+				2EF6B12C225167EE00003BF9 /* SpaceViewController.swift in Sources */,
+				2E97E0442255970000A98043 /* SpaceDetailsViewController.swift in Sources */,
+				2E73F8E0255B2B3B00BC16A7 /* SwiftyJSON.swift in Sources */,
+				2EF6B12A225167EE00003BF9 /* AppDelegate.swift in Sources */,
+				2EF6B13C22518DF100003BF9 /* Space.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EF6B12D225167EE00003BF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EF6B12E225167EE00003BF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EF6B132225167F300003BF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EF6B133225167F300003BF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2EF6B136225167F300003BF9 /* Debug */ = {
@@ -169,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -225,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -246,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michelle.MichelleStaffordCodingChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = michelle.NASAImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -264,7 +339,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michelle.MichelleStaffordCodingChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = michelle.NASAImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -283,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EF6B138225167F300003BF9 /* Build configuration list for PBXNativeTarget "MichelleStaffordCodingChallenge" */ = {
+		2EF6B138225167F300003BF9 /* Build configuration list for PBXNativeTarget "NASAImageSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EF6B139225167F300003BF9 /* Debug */,
