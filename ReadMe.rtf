@@ -1,38 +1,19 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
-{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-\margl1440\margr1440\vieww9000\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+Read Me
 
-\f0\b\fs24 \cf0 Read Me\
-\
 Michelle Stafford
-\f1\b0 \outl\strokewidth60 \
-\outl0\strokewidth0 \
 
-\f0\b Libraries
-\f1\b0 \
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural\partightenfactor0
-\ls1\ilvl0\cf0 {\listtext	1.	}I included the SwiftyJSON library to help with the unpacking of the JSON response. \
-\pard\tx940\tx1440\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1440\fi-1440\pardirnatural\partightenfactor0
-\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Without this library, the unfurling of the JSON response would have taken a lot of time and it would have involved a lot of code, a lot of which would be rather unreadable once it got to the point of getting data out of the JSON response\
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural\partightenfactor0
-\ls1\ilvl0\cf0 {\listtext	2.	}How I architected this project:\
-\pard\tx940\tx1440\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1440\fi-1440\pardirnatural\partightenfactor0
-\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Everything that happens on a different page, had all the code separated for readability. \
-{\listtext	\uc0\u8259 	}I chose a struct for the Space object, so that the object didn't need its own initializer, as only four values needed to be set\
-{\listtext	\uc0\u8259 	}I separated the cell into its own file, so I could pass in the object and set the values for the cell, instead of having to call the cell, the cell's child, and set the child's value each time. This saves time and helps makes things easier to read\
-{\listtext	\uc0\u8259 	}The details view page takes in a space object and displays more detailed version of the space object, once tapped on from a cell\
-{\listtext	\uc0\u8259 	}The main controller handles all the search functions and the loading of the data into the table view. \
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural\partightenfactor0
-\ls1\ilvl0\cf0 {\listtext	3.	}Load up XCode and launch the project\
-\pard\tx940\tx1440\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1440\fi-1440\pardirnatural\partightenfactor0
-\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}hit the the start button\
-{\listtext	\uc0\u8259 	}swipe down to show the search bar\
-{\listtext	\uc0\u8259 	}Type in a keyword to begin searching (This has a long load time, hitting enter makes some of the earlier pictures display)\
-{\listtext	\uc0\u8259 	}Scroll down to the bottom of the table once the all the images have loaded, to load in more images for the next page\
-{\listtext	\uc0\u8259 	}Tap any of the images to view more about the picture\
-}
+Libraries
+	1.	I included the SwiftyJSON library to help with the unpacking of the JSON response. 
+	⁃	Without this library, the unfurling of the JSON response would have taken a lot of time and it would have involved a lot of code, a lot of which would be rather unreadable once it got to the point of getting data out of the JSON response
+	2.	How I architected this project:
+	⁃	Everything that happens on a different page, had all the code separated for readability. 
+	⁃	I chose a struct for the Space object, so that the object didn't need its own initializer, as only four values needed to be set
+	⁃	I separated the cell into its own file, so I could pass in the object and set the values for the cell, instead of having to call the cell, the cell's child, and set the child's value each time. This saves time and helps makes things easier to read
+	⁃	The details view page takes in a space object and displays more detailed version of the space object, once tapped on from a cell
+	⁃	The main controller handles all the search functions and the loading of the data into the table view. 
+	3.	Load up XCode and launch the project
+	⁃	hit the the start button
+	⁃	swipe down to show the search bar
+	⁃	Type in a keyword to begin searching (This has a long load time, hitting enter makes some of the earlier pictures display)
+	⁃	Scroll down to the bottom of the table once the all the images have loaded, to load in more images for the next page
+	⁃	Tap any of the images to view more about the picture
